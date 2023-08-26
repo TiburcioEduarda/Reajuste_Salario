@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PercentualSalario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8C7AE"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A68B63"
+            android:text=" Digite o seu salário (R$):"
+            android:textColor="#2E2826"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtSal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#2E2826" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Qual será o percentual?"
+            android:textColor="#2E2826"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/rdgPerc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdbP40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:textColor="#2E2826" />
+
+            <RadioButton
+                android:id="@+id/rdbP45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="45%"
+                android:textColor="#2E2826" />
+
+            <RadioButton
+                android:id="@+id/rdbP50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                android:textColor="#2E2826" />
+
+            <Button
+                android:id="@+id/btnNS"
+                android:layout_width="295dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="70px"
+                android:onClick="calcular"
+                android:text="Mostrar novo salário"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#A68B63"
+                android:text=" Novo Salário:"
+                android:textColor="#2E2826"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#2E2826" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
